@@ -1,35 +1,76 @@
-.welcome {
+.window {
     border: solid; 
     border-width: 6px;
     width: fit-content;
     border-radius: 16px;
     border-color: #5100ff;
-    padding: 20px; 
     position: absolute; top: 50%; left: 50%; 
     transform: translate(-50%, -50%);
     background-color: rgb(31, 31, 197);
+    overflow: hidden;        /* keeps the header's corners clipped to match rounded corners */
 }
+
+
 
 body {
     background-color: rgb(15, 7, 124);
     color: white;
     background-image: url(background.jpg);
     background-size: cover;
+    margin: 0;
+    height: 100%;
 }
 
-.bottom-bar {
+.top-bar {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgba(37, 8, 123, 0.5);
+    
 }
 
 .wolf {
     display: flex;
-    padding: 10px;
     float: right;
     height: 150px;
     width: 150px;
+    border: solid; 
+    border-width: 4px;
     border-radius: 10px;
-    border: solid;
-    border-color: #3406dc;
+    border-color: #5100ff;
+}
+
+.handle {
+    background-color:rgb(15, 7, 124);
+    width: 390px; 
+    display: flex;
+    cursor: move; 
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 7px;
+    margin: 0 -20px 20px -20px;   /* cancels out the parent's 20px left/right padding */
+    font-family: URW Chancery L, cursive;
+}
+
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -20px;
+}
+
+#welcome {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.x {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    padding-top: 7px;
+    transform: translateX(-8px); /* moves it left by 20px, no layout shift */
+
 }
