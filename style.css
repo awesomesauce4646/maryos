@@ -1,0 +1,35 @@
+.welcome {
+    border: solid; 
+    border-width: 6px;
+    width: fit-content;
+    border-radius: 16px;
+    border-color: #5100ff;
+    padding: 20px; 
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgb(31, 31, 197);
+}
+
+body {
+    background-color: rgb(15, 7, 124);
+    color: white;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.bottom-bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.wolf {
+    display: flex;
+    padding: 10px;
+    float: right;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #3406dc;
+}
