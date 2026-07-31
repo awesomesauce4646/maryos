@@ -10,26 +10,29 @@ var welcomeScreen = document.querySelector("#welcome")
 
 var welcomeScreenClose = document.querySelector("#welcomeclose")
 
+var welcomeScreenOpen = document.querySelector("#welcomeopen")
 // var welcomeScreenOpen = document.querySelector("#welcomeopen")
 
-welcomeScreenClose.addEventListener("click", function() {
-  document.querySelectorAll(".x").forEach(function(closeBtn) {
-    closeBtn.addEventListener("click", function() {
-      var windowToClose = closeBtn.closest(".window");
-      closeWindow(windowToClose);
-    });
+document.querySelectorAll(".x").forEach(function(closeBtn) {
+  closeBtn.addEventListener("click", function() {
+    var windowToClose = closeBtn.closest(".window");
+    closeWindow(windowToClose);
   });
 });
 
-// welcomeScreenOpen.addEventListener("click", function() {
-//   openWindow(welcomeScreen);
-// });
+document.querySelectorAll(".welcome-app").forEach(function(openBtn) {
+  openBtn.addEventListener("click", function() {
+    var targetId = openBtn.getAttribute("data-target");
+    var windowToOpen = document.getElementById(targetId);
+    openWindow(windowToOpen);
+  });
+});
 
 function closeWindow(element) {
   element.style.display = "none"
 }
 function openWindow(element) {
-  element.style.display = "flex"
+  element.style.display = ""
 }
 // Make the DIV element draggable:
 dragElement(document.getElementById("window"));  
