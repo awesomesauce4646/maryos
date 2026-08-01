@@ -11,7 +11,6 @@ var welcomeScreen = document.querySelector("#welcome")
 var welcomeScreenClose = document.querySelector("#welcomeclose")
 
 var welcomeScreenOpen = document.querySelector("#welcomeopen")
-// var welcomeScreenOpen = document.querySelector("#welcomeopen")
 
 document.querySelectorAll(".x").forEach(function(closeBtn) {
   closeBtn.addEventListener("click", function() {
@@ -115,4 +114,17 @@ document.querySelectorAll(".app").forEach(function(iconEl) {
   iconEl.addEventListener("click", function() {
     handleIconTap(iconEl);
   });
+});
+
+var notesText = document.querySelector("#notes-text");
+
+// Load saved content on page load
+var savedNote = localStorage.getItem("myNote");
+if (savedNote !== null) {
+  notesText.innerHTML = savedNote;
+}
+
+// Save content whenever it's edited
+notesText.addEventListener("input", function() {
+  localStorage.setItem("myNote", notesText.innerHTML);
 });
