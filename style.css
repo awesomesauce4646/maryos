@@ -93,6 +93,9 @@ body {
     
 }
 
+.hidden {
+    display: none;
+}
 .x {
     width: 20px;
     height: 20px;

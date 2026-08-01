@@ -28,10 +28,10 @@ document.querySelectorAll(".app").forEach(function(openBtn) {
 });
 
 function closeWindow(element) {
-  element.style.display = "none"
+  element.classList.add("hidden");
 }
 function openWindow(element) {
-  element.style.display = ""
+  element.classList.remove("hidden");
 }
 // Make the DIV element draggable:
 document.querySelectorAll(".window").forEach(function(win) {
