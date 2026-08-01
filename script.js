@@ -20,7 +20,7 @@ document.querySelectorAll(".x").forEach(function(closeBtn) {
   });
 });
 
-document.querySelectorAll(".welcome-app").forEach(function(openBtn) {
+document.querySelectorAll(".app").forEach(function(openBtn) {
   openBtn.addEventListener("click", function() {
     var targetId = openBtn.getAttribute("data-target");
     var windowToOpen = document.getElementById(targetId);
@@ -89,3 +89,30 @@ function dragElement(element) {
     document.onmousemove = null;
   }
 }
+
+var selectedIcon = undefined
+
+function selectIcon(element) {
+  element.classList.add("selected");
+  selectedIcon = element
+} 
+
+function deselectIcon(element) {
+  element.classList.remove("selected");
+  selectedIcon = undefined;
+}
+
+function handleIconTap(element) {
+  if (element.classList.contains("selected")) {
+    deselectIcon(element)
+    openWindow(window)
+  } else {
+    selectIcon(element)
+    closeWindow(window)
+  }
+}
+document.querySelectorAll(".app").forEach(function(iconEl) {
+  iconEl.addEventListener("click", function() {
+    handleIconTap(iconEl);
+  });
+});

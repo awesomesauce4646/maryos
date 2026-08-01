@@ -96,6 +96,12 @@ body {
 
 }
 
+#notes {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 .bottom-bar {
     position: fixed;
     bottom: 0;
@@ -124,4 +130,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2.5px;
+}
+
+.notes-app {
+    width: 70px;
+    height: 70px;
+    background-color:rgb(15, 7, 124);
+    border-style: double;
+    border-color:rgb(31, 31, 197);
+    border-width: 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5px;
+}
+
+.selected {
+    border-style: double;
+    border-width: 5px;
+    border-radius: 30px;
+    margin: 2.5px;
+    padding: 0;
+    border-color:rgb(174, 0, 255);
 }
