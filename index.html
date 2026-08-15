@@ -29,13 +29,10 @@
 
         <img src = "close.png" class = "x" id = "notesclose">
     </div>
-    <div class = "content">
-        <br>
 <div class = "content sidebar">
     <span contenteditable="true" id="notes-text">
       Welcome to YOUR notes app! This can help you list down things you have to remember, like a grocery list, or just random stuff!
     </span>
-</div>
     </div>
 </div>
     <div class = "window hidden" id ="temposurge-window">
@@ -59,6 +56,60 @@
 
     </div>
 </div>
+        <div class = "window hidden" id = "contact-window">
+        <div id = "contact">
+            <p id = "contact-windowheader" class = "handle">
+                CONTACT
+            </p>
+
+            <img src = "close.png" class = "x" id = "contactclose">
+        </div>
+    <div class = "content">
+        <br>
+        <p><em>Heya there!</em> If you ever want to contact me, you can through:</p>
+            <p>Email: marythegoated@gmail.com</p>
+            <p>Slack: marygoat</p>
+            <p>Github: https://github.com/awesomesauce4646</p>
+            <p>Itch.io: https://marygoat.itch.io</p>
+            <br>
+        </div>
+    </div>
+    <div class = "window hidden" id = "calculator-window">
+        <div id = "calculator">
+            <p id = "calculator-windowheader" class = "handle">
+                CALCULATOR
+            </p>
+
+            <img src = "close.png" class = "x" id = "calculatorclose">
+        </div>
+    <div class = "content">
+        <br>
+        <div class="calculator">
+        <div class="calculator__output">0</div>
+        <div class="calculator__keys">
+            <button class="calculator__key calculator__key--operator">+</button>
+            <button class="calculator__key calculator__key--operator">-</button>
+            <button class="calculator__key calculator__key--operator">&times;</button>
+            <button class="calculator__key calculator__key--operator">÷</button>
+            <button class="calculator__key">7</button>
+            <button class="calculator__key">8</button>
+            <button class="calculator__key">9</button>
+            <button class="calculator__key">4</button>
+            <button class="calculator__key">5</button>
+            <button class="calculator__key">6</button>
+            <button class="calculator__key">1</button>
+            <button class="calculator__key">2</button>
+            <button class="calculator__key">3</button>
+            <button class="calculator__key">0</button>
+            <button class="calculator__key">.</button>
+            <button class="calculator__key">AC</button>
+            <button class="calculator__key calculator__key--enter">=</button>
+        </div>
+        </div>
+            <br>
+        </div>
+    </div>
+</div>
         <div class = "top-bar">
         <p class = "top-bar-left">
             |--maryOS--|
@@ -72,7 +123,7 @@
     <div class = "bottom-bar">
         <div>
             <div class="welcome-app app" id="welcomeopen" data-target="welcome-window">
-                <p>hi</p>
+                <p>welcome</p>
             </div>
         </div>
         <div>
@@ -83,6 +134,16 @@
         <div>
             <div class = "temposurge-app app" id = "temposurgeopen" data-target="temposurge-window">
                 <p>game</p>
+            </div>
+        </div>
+        <div>
+            <div class="contact-app app" id="contactopen" data-target="contact-window">
+                <p>contact</p>
+            </div>
+        </div>
+        <div>
+            <div class="calculator-app app" id="calculatoropen" data-target="calculator-window">
+                <p>calculator</p>
             </div>
         </div>
     </div>
