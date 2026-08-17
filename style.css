@@ -182,6 +182,57 @@ body {
     margin: 2.5px;
 }
 
+button {
+    font-family: URW Chancery L, cursive;
+}
+
+.calculator {
+    max-inline-size: 40rem;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15),0px 2px 4x 0px rgba(0,0,0,0.12);
+    margin: -20px;
+}
+.calculator__output {
+    font-size: 2rem;
+    text-align: end; /* This is the Logical Property for text-align: right; and has very good browser support. */
+    background: hsl(241, 100%, 73%); /* background color */
+    color: hsl(255, 100%, 100%); /* text color */
+    padding-block-start: 0.25rem; /* Logical Property for padding-top */
+    padding-block-end: 0.25rem; /* Logical Property for padding-bottom */
+    padding-inline-end: 0.75rem; /* Logical Property for padding-right */
+    margin-inline-start: 0.75rem; /* Logical Property for margin-left */
+    margin-inline-end: 0.75rem; /* Logical Property for margin-right */
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-family: URW Chancery L, cursive;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:#5100ff;
+    border-width: 6px;
+}
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    background: hsl(208, 24%, 74%);
+}
+.calculator__key {
+    border: none;
+    padding-block-start: 0.5rem; /* Logical Property for padding-top */
+    padding-block-end: 0.5rem; /* Logical Property for padding-bottom */
+    padding-inline-start: 1.25rem; /* Logical Property for padding-left */
+    padding-inline-end: 1.25rem; /* Logical Property for padding-right */
+    font-size: 1.5rem;
+    background-color: rgb(31, 31, 197);
+    color: white;
+}
+.calculator__key--operator {
+}
+.calculator__key--enter {
+  grid-column: 4 / 5; /* Start at column #4 and end at column #5 (the very right edge). */
+  grid-row: 2 / span 4; /* Start at row #2 and span 4 rows */
+}
+
 .calculator-app {
     width: 70px;
     height: 70px;
