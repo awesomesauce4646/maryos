@@ -8,9 +8,31 @@
     transform: translate(-50%, -50%);
     background-color: rgb(31, 31, 197);
     overflow: hidden;        /* keeps the header's corners clipped to match rounded corners */
+    animation: fadeIn 500ms ease-in-out;
+
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%
+  }
+}
 
+.fadeOut {
+    animation: fadeOut 500ms ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 body {
     background-color: rgb(15, 7, 124);
@@ -226,8 +248,7 @@ button {
     background-color: rgb(31, 31, 197);
     color: white;
 }
-.calculator__key--operator {
-}
+
 .calculator__key--enter {
   grid-column: 4 / 5; /* Start at column #4 and end at column #5 (the very right edge). */
   grid-row: 2 / span 4; /* Start at row #2 and span 4 rows */
@@ -265,6 +286,10 @@ button {
     justify-content: center;
     align-items: center;
     margin: 2.5px;  
+}
+
+.is-depressed {
+    background-color:rgb(15, 7, 124);
 }
 
 li {
