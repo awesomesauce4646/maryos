@@ -169,6 +169,7 @@ body {
 }
 
 .welcome-app {
+    font-size: 40px;
     width: 70px;
     height: 70px;
     background-color:rgb(15, 7, 124);
@@ -183,6 +184,7 @@ body {
 }
 
 .notes-app {
+    font-size: 40px;
     width: 70px;
     height: 70px;
     background-color:rgb(15, 7, 124);
@@ -197,6 +199,7 @@ body {
 }
 
 .contact-app {
+    font-size: 40px;
     width: 70px;
     height: 70px;
     background-color:rgb(15, 7, 124);
@@ -211,6 +214,7 @@ body {
 }
 
 .search-app {
+    font-size: 40px;
     width: 70px;
     height: 70px;
     background-color:rgb(15, 7, 124);
@@ -277,6 +281,7 @@ button {
 }
 
 .calculator-app {
+    font-size: 40px;
     width: 70px;
     height: 70px;
     background-color:rgb(15, 7, 124);
@@ -297,6 +302,7 @@ button {
 }
 
 .temposurge-app {
+    font-size: 40px;
     width: 70px;
     height: 70px;
     background-color:rgb(15, 7, 124);
