@@ -30,6 +30,9 @@ document.querySelectorAll(".app").forEach(function(openBtn) {
 function closeWindow(element) {
   element.classList.add("fadeOut");
   element.addEventListener("animationend", function handler() {
+    if (selectedIcon) {
+      deselectIcon(selectedIcon);
+    }
     element.classList.remove("fadeOut");
     element.classList.add("hidden");
     element.removeEventListener("animationend", handler);

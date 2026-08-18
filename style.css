@@ -133,6 +133,12 @@ body {
 
 }
 
+#search {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 #notes {
     display: flex;
     margin: 0;
@@ -204,8 +210,24 @@ body {
     margin: 2.5px;
 }
 
+.search-app {
+    width: 70px;
+    height: 70px;
+    background-color:rgb(15, 7, 124);
+    border-style: double;
+    border-color:rgb(31, 31, 197);
+    border-width: 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5px;
+}
+
 button {
     font-family: URW Chancery L, cursive;
+    background-color: hsl(241, 100%, 73%);
+    color: white;
 }
 
 .calculator {

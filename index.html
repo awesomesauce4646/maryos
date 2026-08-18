@@ -15,10 +15,10 @@
         <div class = "content">
         <img src ="wolf.jpg" class = "wolf">
         <h1> maryOS! </h1>
-        <p> welcome to maryOS!</p>
-        <p> check out my cool game...</p>
-        <a href = "https://marygoat.itch.io/tempo-surge" style = "color: rgb(206, 100, 255);"> <strong>TEMPO SURGE</strong></a>
-        <p> i'll make this page about me for now... i like games<br>and programming and music!<br> rhythm games are peak.</p><br>
+        <p>welcome to maryOS!</p>
+        <p>with six windows to choose from, you can look and do many things!</p>
+        <p>need to do some math? the calc is what you want!</p>
+        <br>
     </div>
 </div>
 <div class = "window note-size hidden" id = "notes-window">
@@ -49,11 +49,15 @@
         <p>A WarioWare like game where you have to complete minigames without losing lives<br> to win!</p>
         <p><strong>Features:</strong> 
 
-        <p>3 fast minigames! Such as:</p>
+        <p>6 fast minigames! Such as:</p>
         <li>Platformer - Grab the guitar picks as fast as possible</li>
         <li>Clicker - Collect all the music notes in time</li>
-        <li>Click-Smasher - Tune your sound before time ends</p>
-
+        <li>Click-Smasher - Tune your sound before time ends</li>
+        <li>Swap Pieces - Swap the xylophone keys into place</li>
+        <li>Click parallel buttons - String the harp as soon as you can</li>
+        <li>Press keyboard numbers - Press the trumpet keys in the right order</li>
+        <br>
+        <p>Can you complete all minigames in time? Maybe even without losing a life?</p>
     </div>
 </div>
         <div class = "window hidden" id = "contact-window">
@@ -109,6 +113,30 @@
             <br>
         </div>
     </div>
+        <div class = "window hidden" id = "search-window">
+        <div id = "search">
+            <p id = "search-windowheader" class = "handle">
+                SEARCH
+            </p>
+
+            <img src = "close.png" class = "x" id = "searchclose">
+        </div>
+    <div class = "content">
+        <br>
+            <!--
+            Source - https://stackoverflow.com/a/42926071
+            Posted by sansan, modified by community. See post 'Timeline' for change history
+            Retrieved 2026-08-18, License - CC BY-SA 3.0
+            -->
+
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+            <input name="sitesearch" type="hidden">
+            <input autocomplete="on" class="form-control search" name="q" placeholder="Search on Google!" required="required"  type="text">
+            <button class="button" type="submit">Search</button>
+            </form>
+            <br>
+        </div>
+    </div>
 </div>
         <div class = "top-bar">
         <p class = "top-bar-left">
@@ -144,6 +172,11 @@
         <div>
             <div class="calculator-app app" id="calculatoropen" data-target="calculator-window">
                 <p>calculator</p>
+            </div>
+        </div>
+        <div>
+            <div class="search-app app" id="searchopen" data-target="search-window">
+                <p>search</p>
             </div>
         </div>
     </div>
